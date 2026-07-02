@@ -5,15 +5,84 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>my Restaurant</title>
 </head>
+
+<style>
+    body {
+    background-image: url("./salad-tomatoes-greens-dressing-oil-feta-cheese-blue-plate-white-wooden-background-top-view-banner-website-52717635.webp");
+    background-size: cover;      /* Covers the whole screen */
+    background-repeat: no-repeat; /* Prevents repeating */
+    background-position: center;  /* Centers the image */
+    background-attachment: fixed; /* Keeps image fixed while scrolling */
+}
+    .head{
+        color:#ff00c3
+
+    }
+    .head1{
+        color:rgb(93, 146, 233)
+    }
+    .food{
+        color:blueviolet;
+
+    }
+      .container{
+               display: grid;
+               grid-template-columns: repeat(3, 300px);
+               gap: 20px;
+               justify-content: center;
+               margin-top: 20px;
+    }
+      .menu{
+           height:200px;
+           width:300px;
+           background-color:lightblue;
+           border: 2px solid black;
+      }
+      .menu1{
+              height:200px;
+              width:300px;
+              background-color:lightpink;
+              border:2px solid black;
+      }
+      .menu3{
+             height:200px;
+             width:300px;
+             background-color:lightgreen;
+             border:2px solid black; 
+      }
+      .menu4{
+             height:200px;
+             width:300px;
+             background-color:rgb(215, 127, 237);
+             border:2px solid black;  
+      }
+      .menu5{
+             height:200px;
+             width:300px;
+             background-color:rgb(225, 96, 178);
+             border:2px solid black;
+      }
+      .menu6{
+             height:200px;
+             width:300px;
+             background-color:rgb(152, 135, 229);
+             border:2px solid black;
+             
+           
+           
+      }
+</style>
+
 <body >
     <center>
-        <h1>Bhanu Sri Restaurant</h1>
-        <h3>Welcome to our restaurant!</h3>
-        <p><i>Enjoy the best food in town!</i></p>
-        <h2>🍽️ Food Menu</h2>
+        <h1 class="head">Bhanu Sri Restaurant</h1>
+        <h3 class="head1">Welcome to our restaurant!</h3>
+        <p ><i>Enjoy the best food in town!</i></p>
+        <h2 class="food">🍽️ Food Menu</h2>
     </center>
- 
-       
+
+    <div class="container">
+       <div class="menu">
         <h3> 🥗 Veg Starters</h3>
         <ol>
            <li>Paneer Tikka - ₹180</li>
@@ -22,7 +91,9 @@
            <li>Gobi 65 - ₹160</li>
            <li>Spring Rolls - ₹170</li>
         </ol>      
-        
+        </div>
+
+        <div class="menu1">
         <h3>🍗 Non-Veg Starters</h3>
         <ol type="a">
            <li>Chicken 65 - ₹220</li>
@@ -31,8 +102,9 @@
            <li>Chicken Tikka - ₹260</li>
            <li>Pepper Chicken - ₹240</li>
         </ol>
-
+        </div>
         
+        <div class="menu3">
         <h3> 🥗 Veg Main Course</h3>
         <ol type="i">
             <li>Paneer Butter Masala - ₹220</li>
@@ -41,19 +113,20 @@
             <li>Dal Tadka - ₹180</li>
             <li>Veg Biryani - ₹190</li> 
         </ol>
+        </div>
         
-        
+        <div class="menu4">
         <h3>🍖 Non-Veg Main Course</h3>
-        <ul>
+        <ul >
             <li>Chicken Biryani-250/-</li>
             <li>Butter Chicken-200/-</li>
             <li>Mutton Biryani-300/-</li>
             <li>Fish Biryani-250/-</li>
             <li>Chicken 65-150/-</li>
         </ul>
+        </div>
 
-
-        
+        <div class="menu5">
         <h3>🍰 Desserts</h3>
         <ul type="circle">
             <li>Gulab Jamun - ₹60</li>
@@ -61,8 +134,9 @@
             <li>Chocolate Cake - ₹120</li>
             <li>Ice Cream - ₹80</li>
         </ul>
+        </div>
 
-    
+        <div class="menu6">       
         <h3>🥤 Beverages</h3>
         <ul type="square">
             <li>Tea - ₹20</li>
@@ -71,7 +145,7 @@
             <li>Mango Juice - ₹70</li>
             <li>Soft Drink - ₹40</li>
         </ul>
-
-
+        </div>
+    </div>
 </body>
 </html>
